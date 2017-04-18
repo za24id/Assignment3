@@ -1,7 +1,9 @@
 ## Pluto   
 ### 1.0 Introduction  
-PLUTO is an automatic parallelization tool based on the polyhedral model. The polyhedral model for compiler optimization provides an abstraction to perform high-level transformations such as loop-nest optimization and parallelization on affine loop nests. Pluto transforms C programs from source to source for coarse-grained parallelism and data locality simultaneously. The core transformation framework mainly works by finding affine transformations for efficient tiling [1]   
+PLUTO is an automatic parallelization tool based on the polyhedral model. The polyhedral model for compiler optimization provides an abstraction to perform high-level transformations such as loop-nest optimization and parallelization on affine loop nests. Pluto transforms C programs from source to source for coarse-grained parallelism and data locality simultaneously. The core transformation framework mainly works by finding affine transformations for efficient tiling [1]  
+
 --- 
+ 
 
 ### 2.0 Download and Install  
 * Download the Pluto source ` wget https://www.dropbox.com/s/gz3y911x3vb8p6i/pluto-0.11.4.tar?dl=0 `
