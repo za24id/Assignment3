@@ -72,3 +72,39 @@ WARNING: C file generation has failed.
 /usr/bin/ld: cannot find ?y?: No such file or directory
 /usr/bin/ld: error: Failed to delete '?y?': ?y?: can't get status of file: No such file or directory
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+
+### 
+```
+zmalatta@rose:~$ llc --version
+LLVM (http://llvm.org/):
+  LLVM version 3.3
+  Optimized build with assertions.
+  Built Apr 17 2017 (11:31:30).
+  Default target: x86_64-unknown-linux-gnu
+  Host CPU: x86-64
+
+  Registered Targets:
+    aarch64  - AArch64
+    arm      - ARM
+    cpp      - C++ backend
+    hexagon  - Hexagon
+    mblaze   - MBlaze
+    mips     - Mips
+    mips64   - Mips64 [experimental]
+    mips64el - Mips64el [experimental]
+    mipsel   - Mipsel
+    msp430   - MSP430 [experimental]
+    nvptx    - NVIDIA PTX 32-bit
+    nvptx64  - NVIDIA PTX 64-bit
+    ppc32    - PowerPC 32
+    ppc64    - PowerPC 64
+    sparc    - Sparc
+    sparcv9  - Sparc V9
+    systemz  - SystemZ
+    thumb    - Thumb
+    x86      - 32-bit X86: Pentium-Pro and above
+    x86-64   - 64-bit X86: EM64T and AMD64
+    xcore    - XCore
+```
