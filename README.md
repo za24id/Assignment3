@@ -1,18 +1,18 @@
 ## Pluto   
 ### 1.0 Introduction  
-PLUTO is an automatic parallelization tool based on the polyhedral model. The polyhedral model for compiler optimization provides an abstraction to perform high-level transformations such as loop-nest optimization and parallelization on affine loop nests. Pluto transforms C programs from source to source for coarse-grained parallelism and data locality simultaneously. The core transformation framework mainly works by finding affine transformations for efficient tiling [1]  
+PLUTO is an automatic parallelization tool based on the polyhedral model which provides an abstraction to perform high-level transformations such as loop-nest optimization and parallelization on affine loop nests. Pluto transforms C source code for coarse-grained parallelism and data locality simultaneously. The core transformation framework mainly works by finding affine transformations for efficient tiling [1]  
 
 --- 
  
 
 ### 2.0 Download and Install  
-* Download the Pluto source ` wget https://www.dropbox.com/s/gz3y911x3vb8p6i/pluto-0.11.4.tar?dl=0 `
-* Rename the downloaded file ` mv` *`downloadedfile`* `pluto-0.11.4.tar `
-* Deflate the file ` tar -xvf pluto-0.11.4.tar `
-* Make it your working directory ` cd pluto-0.11.4 `
-* Configure it ` /configure `
-* If not already installed, ` sudo apt-get install texinfo `
-* Run the make file ` make [-j4] `
+1. Download the Pluto source ` wget https://www.dropbox.com/s/gz3y911x3vb8p6i/pluto-0.11.4.tar?dl=0 `
+2. Rename the downloaded file ` mv` *`downloadedfile`* `pluto-0.11.4.tar `
+3. Deflate the file ` tar -xvf pluto-0.11.4.tar `
+4. Make it your working directory ` cd pluto-0.11.4 `
+5. Configure it ` /configure `
+6. If not already installed, ` sudo apt-get install texinfo `
+7. Run the make file ` make [-j4] `
 
 --- 
 
