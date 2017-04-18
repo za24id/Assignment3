@@ -44,7 +44,12 @@ t6 --> fwd_dep  loop   (band 0)no-ujam
 
 ```  
 --- 
+### Why was the tool developed  
+Although a signifi- cant body of research has addressed affine scheduling and partitioning, the prob- lem of automatically finding good affine transforms for communication-optimized coarse-grained parallelization together with locality optimization for the general case of arbitrarily-nested loop sequences remains a challenging problem.[2]  
+  
+--- 
+
 
 ## Source
 1. http://pluto-compiler.sourceforge.net 
-2. s
+2. Automatic Transformations for Communication-Minimized Parallelization and Locality Optimization in the Polyhedral Model
