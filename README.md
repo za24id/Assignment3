@@ -46,7 +46,7 @@ patching file tools/lto/LTOCodeGenerator.h
 
 
 cd $LLVM_SRC
-./configure --prefix=$PREFIX --enable-optimized --enable-assertions --enable-pic 
+/configure --prefix=$PREFIX --enable-optimized --enable-assertions --enable-pic --with-binutils-include=/usr/include
 make -j8 && make install
 
 
