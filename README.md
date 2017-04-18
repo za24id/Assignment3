@@ -11,8 +11,9 @@ PLUTO is an automatic parallelization tool based on the polyhedral model which p
 3. Deflate the file ` tar -xvf pluto-0.11.4.tar `
 4. Make it your working directory ` cd pluto-0.11.4 `
 5. Configure it ` /configure `
-6. If not already installed, ` sudo apt-get install texinfo `
-7. Run the make file ` make [-j4] `
+6. Run the make file ` make [-j4] `
+
+Note: Rose has all the necessary software to install and run PLUTO. If running on a different machine, ensure it has *texinfo* package installed. It might requires other packages that I'm not aware of but that's always part of the installation experience fun!  
 
 --- 
 
