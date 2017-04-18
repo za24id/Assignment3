@@ -42,10 +42,17 @@ t6 --> fwd_dep  loop   (band 0)no-ujam
 [pluto] using statement-wise -fs/-ls options: S1(4,6), 
 [Pluto] Output written to seidel.pluto.c
 
-```  
+```   
+ 
 --- 
+
+### How does it work  
+an automatic transformation framework to optimize arbitrarily nested loop sequences with affine dependences for parallelism and locality simultaneously. The approach finds good tiling hyperplanes by embedding a powerful and versatile cost function into an Integer Linear Programming formulation. These tiling hyperplanes are used for communication-minimized coarse-grained parallelization as well as for locality optimization. The approach enables the minimization of inter-tile communication volume in the processor space, and minimization of reuse distances for local execution at each node. Programs requiring one-dimensional versus multi-dimensional time schedules (with scheduling- based approaches) are all handled with the same algorithm. Synchronization-free parallelism, permutable loops or pipelined parallelism at various levels can be detected.  
+
+--- 
+
 ### Why was the tool developed  
-Although a signifi- cant body of research has addressed affine scheduling and partitioning, the prob- lem of automatically finding good affine transforms for communication-optimized coarse-grained parallelization together with locality optimization for the general case of arbitrarily-nested loop sequences remains a challenging problem.[2]  
+The developers of the tool claim that although a significant body of research has addressed affine scheduling and partitioning, the problem of automatically finding good affine transforms for communication-optimized coarse-grained parallelization together with locality optimization for the general case of arbitrarily-nested loop sequences remains a challenging problem.[2]  
   
 --- 
 
