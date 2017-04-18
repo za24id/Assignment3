@@ -4,7 +4,7 @@ PLUTO is an automatic parallelization tool based on the polyhedral model. The po
 
 ### Download and Install  
 * Download the Pluto source ` wget https://www.dropbox.com/s/gz3y911x3vb8p6i/pluto-0.11.4.tar?dl=0 `
-* Rename the downloaded file ` mv __downloadedfile__ pluto-0.11.4.tar `
+* Rename the downloaded file ` mv *downloadedfile* pluto-0.11.4.tar `
 * Deflate the file ` tar -xvf pluto-0.11.4.tar `
 * Make it your working directory ` cd pluto-0.11.4 `
 * Configure it ` /configure `
