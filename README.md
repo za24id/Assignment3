@@ -1,7 +1,7 @@
 ## Pluto   
 ### Introduction  
 PLUTO is an automatic parallelization tool based on the polyhedral model. The polyhedral model for compiler optimization provides an abstraction to perform high-level transformations such as loop-nest optimization and parallelization on affine loop nests. Pluto transforms C programs from source to source for coarse-grained parallelism and data locality simultaneously. The core transformation framework mainly works by finding affine transformations for efficient tiling [1]
-
+---
 ### Download and Install  
 * Download the Pluto source ` wget https://www.dropbox.com/s/gz3y911x3vb8p6i/pluto-0.11.4.tar?dl=0 `
 * Rename the downloaded file ` mv` *`downloadedfile`* `pluto-0.11.4.tar `
@@ -42,5 +42,9 @@ t6 --> fwd_dep  loop   (band 0)no-ujam
 [pluto] using statement-wise -fs/-ls options: S1(4,6), 
 [Pluto] Output written to seidel.pluto.c
 
-```
+```  
+--- 
 
+## Source
+1. http://pluto-compiler.sourceforge.net 
+2. s
