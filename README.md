@@ -114,8 +114,8 @@ The developers of the tool claim that although a significant body of research ha
   
 --- 
 
-### 6.0 
-Preparing for this assignment, one of the tools I experimanted with is The autoparallelizing compiler for shared-memory computers (AESOP) that is designed to handle real-world code rather than small, simple kernels. For example, AESOP can compile SPEC2006 and OMP2001 benchmarks, and automated test suite which consists of over 2 million lines of code. According to the AESOP installation instructions, it requires LLVM 3.3 and Clang 3.3 so here are the steps I took to compile and install it.
+### 6.0 Connections  
+Preparing for this assignment, one of the tools I experimented with is The autoparallelizing compiler for shared-memory computers (AESOP) that is designed to handle real-world code rather than small, simple kernels. For example, AESOP can compile SPEC2006 and OMP2001 benchmarks, and automated test suite which consists of over 2 million lines of code. According to the AESOP installation instructions, it requires LLVM 3.3 and Clang 3.3 so here are the steps I took to compile and install it.
 
 
 ```
@@ -160,6 +160,21 @@ WARNING: C file generation has failed.
 /usr/bin/ld: error: Failed to delete '?y?': ?y?: can't get status of file: No such file or directory
 clang: error: linker command failed with exit code 1 (use -v to see invocation) 
 ```
+
+As you can see, although aesop was able to recognize and parallelize loops, it issued `llc: error: invalid target 'c'.`  The reason for the error is in LLVM 3.1 the C backend has been removed. 
+
+My alternative was to use aesopgcc to compile C++ instead of aesopcc for C. Using aesopgcc requires Dragonegg 3.3. I downloaded and attempted to install it but immediately received 
+
+```
+Compiling utils/TargetInfo.cpp
+Linking TargetInfo
+TargetInfo.o:TargetInfo.cpp:function main: error: undefined reference to 'llvm::Triple::normalize(llvm::StringRef)'
+collect2: error: ld returned 1 exit status
+Makefile:136: recipe for target 'TargetInfo' failed
+make: *** [TargetInfo] Error 1
+```
+The error is due to declaring Triple incorrectly. I tried fixing that and did but ran into a bunch of other problems which led me to work on PLUTO instead, which is a similar tool in the fact that it performs auto parallelization
+ 
 ### 7.0  Sources
 1. http://pluto-compiler.sourceforge.net 
 2. Automatic Transformations for Communication-Minimized Parallelization and Locality Optimization in the Polyhedral Model
