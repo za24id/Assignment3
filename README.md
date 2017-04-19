@@ -6,11 +6,11 @@ PLUTO is an automatic parallelization tool based on the polyhedral model which p
  
 
 ### 2.0 Download and Install  
-1. Download the Pluto source ` wget https://www.dropbox.com/s/gz3y911x3vb8p6i/pluto-0.11.4.tar?dl=0 `
+1. Download the Pluto ` wget https://www.dropbox.com/s/gz3y911x3vb8p6i/pluto-0.11.4.tar?dl=0 `
 2. Rename the downloaded file ` mv` *`downloadedfile`* `pluto-0.11.4.tar `
 3. Deflate the file ` tar -xvf pluto-0.11.4.tar `
-4. Make it your working directory ` cd pluto-0.11.4 `
-5. Configure it ` ./configure `
+4. Go to folder ` cd pluto-0.11.4 `
+5. Configure PLUTO ` ./configure `
 6. Run the make file ` make [-j8] `
 
 **Note**: Rose has all the software required to install and run PLUTO. If running on a different machine, the installation might complain about missing software, such as Makeinfo which is part of the *texinfo* package. You might find out it requires others that I'm not aware of but what's an installation without the software not found message!  
