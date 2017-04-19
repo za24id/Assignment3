@@ -13,11 +13,13 @@ PLUTO is an automatic parallelization tool based on the polyhedral model which p
 5. Configure it ` /configure `
 6. Run the make file ` make [-j4] `
 
-Note: Rose has all the necessary software to install and run PLUTO. If running on a different machine, ensure it has *texinfo* package installed. It might requires other packages that I'm not aware of but that's always part of the installation experience fun!  
+**Note**: Rose has all the software required to install and run PLUTO. If running on a different machine, the installation will complain about missing software, such as Makeinfo which is part of the *texinfo* package installed. You might find out it requires others that I'm not aware of but what's an installation without the software not found message!  
 
 --- 
 
 ### 3.0 Usage 
+
+Let's test it on one of the programs provides by PLUTO! 
 
 ` ./polycc test/seidel.c --tile --parallel `
 
@@ -55,6 +57,8 @@ loop types (loop, loop, loop, loop, loop, loop)
 [pluto] using statement-wise -fs/-ls options: S1(4,6), 
 [Pluto] Output written to seidel.pluto.c
 ```   
+
+If applying PLUTO on other programs, you might see `Error extracting polyhedra from source file` that's because it couldn't build one, which is normal.
 
 --- 
 ### 4.0 Results
