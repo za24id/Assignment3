@@ -13,7 +13,7 @@ PLUTO is an automatic parallelization tool based on the polyhedral model which p
 5. Configure it ` ./configure `
 6. Run the make file ` make [-j8] `
 
-**Note**: Rose has all the software required to install and run PLUTO. If running on a different machine, the installation will complain about missing software, such as Makeinfo which is part of the *texinfo* package installed. You might find out it requires others that I'm not aware of but what's an installation without the software not found message!  
+**Note**: Rose has all the software required to install and run PLUTO. If running on a different machine, the installation might complain about missing software, such as Makeinfo which is part of the *texinfo* package. You might find out it requires others that I'm not aware of but what's an installation without the software not found message!  
 
 --- 
 
