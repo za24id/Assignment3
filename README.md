@@ -102,7 +102,8 @@ if ((N >= 3) && (T >= 1)) {
 }
 /* End of CLooG code */
 ```
-#### 4.3 Limiations 
+#### 4.3 Limiations  
+ 
 Unlike existing parallelization tools, for example AESOP, PLUTO is not integrated as a part of a compiler, meaning a user would still have to compile and link to see quantitative results. Rather, it only generates modified source code.  
 --- 
 ### 5.0 About PLUTO
