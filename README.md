@@ -102,10 +102,6 @@ if ((N >= 3) && (T >= 1)) {
 }
 /* End of CLooG code */
 ```
-#### 4.3 Limiations  
- 
-Unlike existing parallelization tools, for example AESOP, PLUTO is not integrated as a part of a compiler, meaning a user would still have to compile and link to see quantitative results. Rather, it only generates modified source code.    
-
 --- 
 ### 5.0 About PLUTO
 #### 5.1 How does it work  
@@ -115,6 +111,10 @@ Pluto applies an automatic transformation framework to optimize arbitrarily nest
 #### 5.2 Why was the tool developed  
 The developers of the tool claim that although a significant body of research has addressed affine scheduling and partitioning, the problem of automatically finding good affine transforms for communication-optimized coarse-grained parallelization together with locality optimization for the general case of arbitrarily-nested loop sequences remains a challenging problem.Therefore they propose a cost model to drive automatic transformation in the polyhedral model. [2]
   
+#### 5.3 Limiations  
+ 
+Unlike existing parallelization tools, for example AESOP, PLUTO is not integrated as a part of a compiler, meaning a user would still have to compile and link to see quantitative results. Rather, it only generates modified source code.    
+
 --- 
 
 ### 6.0 Connections  
